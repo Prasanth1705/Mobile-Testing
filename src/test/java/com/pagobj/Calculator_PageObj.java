@@ -4,6 +4,7 @@ package com.pagobj;
 import org.openqa.selenium.support.PageFactory;
 import org.setup.Launch_setup;
 import org.testng.Assert;
+import org.testng.Reporter;
 
 import com.page.Calculator_Page;
 
@@ -17,6 +18,7 @@ public class Calculator_PageObj extends Launch_setup{
 	{
 		try
 		{
+			Reporter.log("Execution 1");
 			Thread.sleep(2000);
 			calc.AllClear.click();			
 			Thread.sleep(2000);
