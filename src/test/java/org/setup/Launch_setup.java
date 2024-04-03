@@ -18,8 +18,8 @@ public abstract class Launch_setup {
 
 		caps.setCapability("platformName", "Android");
 		caps.setCapability("deviceName", "OnePlus IN2011"); //OnePlus8 OnePlus IN2011
-		caps.setCapability("appPackage", "com.oneplus.calculator");
-		caps.setCapability("appActivity", "com.android.calculator2.Calculator");
+		caps.setCapability("appPackage", "com.instagram.android"); //com.oneplus.calculator
+		caps.setCapability("appActivity", "com.instagram.mainactivity.LauncherActivity"); //com.android.calculator2.Calculator
 		caps.setCapability("automationName", "uiautomator2"); // Use UiAutomator2 for
 		caps.setCapability("noReset", true); // Keep app data between
 		caps.setCapability("newCommandTimeout", 120); // Timeout in seconds

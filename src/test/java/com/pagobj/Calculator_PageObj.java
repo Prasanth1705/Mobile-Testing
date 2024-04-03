@@ -1,6 +1,7 @@
 package com.pagobj;
 
 
+import org.generics.GenericFunctions;
 import org.openqa.selenium.support.PageFactory;
 import org.setup.Launch_setup;
 import org.testng.Assert;
@@ -19,17 +20,16 @@ public class Calculator_PageObj extends Launch_setup{
 		try
 		{
 			Reporter.log("Execution 1");
-			Thread.sleep(2000);
+			GenericFunctions.waitTillTheElementIsVisibleAndClickable(calc.AllClear);
 			calc.AllClear.click();			
-			Thread.sleep(2000);
+			GenericFunctions.waitTillTheElementIsVisibleAndClickable(calc.Eight);
 			calc.Eight.click();
-			Thread.sleep(2000);
+			GenericFunctions.waitTillTheElementIsVisibleAndClickable(calc.Add);
 			calc.Add.click();
-			Thread.sleep(2000);
+			GenericFunctions.waitTillTheElementIsVisibleAndClickable(calc.Two);
 			calc.Two.click();
-			Thread.sleep(2000);
+			GenericFunctions.waitTillTheElementIsVisibleAndClickable(calc.equaltoo);
 			calc.equaltoo.click();
-			Thread.sleep(1000);
 
 			String s = calc.Ans.getText().trim();
 

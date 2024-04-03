@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.calculator.Addition_Functionality_Check">
+      <class name="com.Instagram.Chat">
         <methods>
-          <include name="Add"/>
           <include name="setUp"/>
+          <include name="Add"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.calculator.Addition_Functionality_Check -->
+      </class> <!-- com.Instagram.Chat -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
